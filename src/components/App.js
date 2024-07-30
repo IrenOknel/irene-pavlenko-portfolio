@@ -8,7 +8,7 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import "./App.css";
 
-const App = () => (
+const App = () =>
   <div>
     <Navigation />
     <Hero />
@@ -17,7 +17,6 @@ const App = () => (
     <Projects />
     <Contact />
     <Footer />
-  </div>
-);
+  </div>;
 
 export default App;

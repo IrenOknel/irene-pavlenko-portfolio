@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <section id="hero">
-      <h1 class="lobster-regular">Hello!</h1>
+      <h1 className="lobster-regular">Hello!</h1>
       <p>
         {displayedText}
       </p>

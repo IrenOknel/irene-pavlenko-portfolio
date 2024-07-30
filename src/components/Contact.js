@@ -5,7 +5,6 @@ import linkedin from "../assets/linkedin.png";
 const Contact = () => {
   return (
     <section id="contact">
-      <h2>Contact</h2>
       <div className="contact-icons">
         <a href="mailto:irenpavlenko22@gmail.com">
           <img src={email} alt="Email" />
