@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <section id="about">
-      <h2>About Me</h2>
+      <h2 class="lobster-regular">About Me</h2>
       <p>
         As a Full Stack Developer, I bring not only technical proficiency but
         also a suite of soft skills that make me an effective and collaborative

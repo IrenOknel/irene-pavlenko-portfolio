@@ -8,7 +8,7 @@ import mongodb from "../assets/mongodb.png";
 const Technologies = () => {
   return (
     <section id="technologies">
-      <h2>Technologies</h2>
+      <h2 className="section-title lobster-regular">Technologies</h2>
       <div className="tech-icons">
         <figure className="tech-icon">
           <img src={html} alt="HTML" />

@@ -57,7 +57,7 @@ nav ul li a:hover {
 }
 
 section {
-  padding: 14em;
+  padding: 13em;
   text-align: center;
 }
 
@@ -81,7 +81,8 @@ section {
 
 .tech-icon figcaption {
   margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 1.8em;
+  font: bold 1.7em/1.8 "Poppins", sans-serif;
   text-align: center;
   color: #ffffff;
 }
@@ -100,7 +101,7 @@ section {
 
   .tech-icon img,
   .contact-icons img {
-    width: 30px;
+    width: auto;
     margin: 0.5em;
   }
 }
@@ -141,6 +142,7 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 150px;
+  margin-bottom: 8%;
 }
 
 #hero h1 {
@@ -160,4 +162,37 @@ footer {
   max-width: 600px;
   text-align: left;
   line-height: 1.5;
+}
+
+/* about section */
+#about {
+  padding: 5em;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#about h2 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: #4e40fe;
+  text-shadow: 0 0 2px #4e40fe, 0 0 15px #a6a0ef;
+}
+
+#about h2.lobster-regular {
+  font-family: "Lobster", sans-serif;
+}
+
+#about p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: justify;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.158);
+}
+
+/* technologies section */
+#technologies h2.section-title {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: #4e40fe;
+  text-shadow: 0 0 2px #4e40fe, 0 0 15px #a6a0ef;
 }
