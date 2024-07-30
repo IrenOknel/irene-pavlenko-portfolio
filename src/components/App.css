@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   padding-bottom: 60px;
   color: #ffffff;
-  background: radial-gradient(circle, #2A1B3D, #2e3944, #123c69, #2f4454);
+  background: radial-gradient(circle, #2a1b3d, #98b0c8, #123c69, #2f4454);
   background-size: 200% 200%;
   animation: gradientAnimation 15s ease infinite;
+  font-family: "Poppins", sans-serif;
 }
 
 @keyframes gradientAnimation {
@@ -29,24 +31,33 @@ body {
 
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   list-style-type: none;
-  background-color: transparent;
-  padding: 1em;
+  background: linear-gradient(to left, #638aa8 35%, transparent);
+  padding: 0.5em;
+  padding-right: 13em;
+  margin: 0;
 }
 
 nav ul li {
-  margin: 0 1em;
+  margin: 1em;
 }
 
 nav ul li a {
-  color: rgb(6, 6, 6);
   text-decoration: none;
   color: #ffffff;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #4e40fe;
+  text-shadow: 0 0 2px #4e40fe, 0 0 15px #a6a0ef;
 }
 
 section {
-  padding: 2em;
+  padding: 14em;
   text-align: center;
 }
 
@@ -99,6 +110,6 @@ footer {
   position: absolute;
   font-size: 0.9em;
   padding: 1em 0;
-  color: #A4B3B6;
+  color: #a4b3b6;
   width: 100%;
 }
