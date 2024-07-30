@@ -113,3 +113,51 @@ footer {
   color: #a4b3b6;
   width: 100%;
 }
+
+/* Typing effect */
+#hero p {
+  display: inline-block;
+  white-space: pre-wrap;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+/* hero section */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 150px;
+}
+
+#hero h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  color: #4e40fe;
+  text-shadow: 0 0 2px #4e40fe, 0 0 20px #a6a0ef;
+}
+
+#hero h1.lobster-regular {
+  font-family: "Lobster", sans-serif;
+}
+
+#hero p {
+  font-size: 28px;
+  font-family: "Lato", sans-serif;
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.5;
+}
