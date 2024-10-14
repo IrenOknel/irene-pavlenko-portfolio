@@ -4,26 +4,24 @@ import "./App.css";
 const Hero = () => {
   const [displayedText, setDisplayedText] = useState("");
   const fullText =
-    "My\ name is Irene, a web developer who crafts websites with the same joy and precision as a barista making the perfect latte.";
+    "My name is Irene, a web developer who crafts websites with the same joy and precision as a barista making the perfect latte.";
   const typingSpeed = 60;
 
-  const currentIndexRef = useRef(0); // current index with useRef
+  const currentIndexRef = useRef(0); // Keep track of current index
 
   useEffect(() => {
     const typeText = () => {
       if (currentIndexRef.current < fullText.length) {
-        setDisplayedText(
-          (prev) => prev + fullText.charAt(currentIndexRef.current)
-        );
+        const nextText = fullText.substring(0, currentIndexRef.current + 1); 
+        setDisplayedText(nextText);
         currentIndexRef.current++;
         setTimeout(typeText, typingSpeed);
       }
     };
 
-    typeText(); // Start of the typing effect
+    typeText();
 
     return () => {
-      // Cleaning any pending timeouts when component unmounts
       currentIndexRef.current = fullText.length;
     };
   }, [fullText, typingSpeed]);
