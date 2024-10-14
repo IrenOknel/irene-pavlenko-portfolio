@@ -4,7 +4,7 @@ import "./App.css";
 const Hero = () => {
   const [displayedText, setDisplayedText] = useState("");
   const fullText =
-    "My\ name is Irene, a web developer who crafts websites with the same joy and precision as a barista making the perfect latte.";
+    "My name is Irene, a web developer who crafts websites with the same joy and precision as a barista making the perfect latte.";
   const typingSpeed = 60;
 
   useEffect(() => {
